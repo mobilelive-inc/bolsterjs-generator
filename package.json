@@ -1,0 +1,30 @@
+{
+  "name": "create-mobilelive-mfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fix": "standard --fix",
+    "lint": "standard | snazzy",
+    "test": "tap -j1 -R  classic test/*.test.js",
+    "preinstall": "node preinstall",
+    "check": "npm run lint && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3",
+    "tap": "^15.0.9"
+  },
+  "dependencies": {
+    "commist": "^2.0.0",
+    "debug": "^4.3.1",
+    "enquirer": "^2.3.6",
+    "generify": "^4.2.0",
+    "minimist": "^1.2.5",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
