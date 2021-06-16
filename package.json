@@ -1,9 +1,9 @@
 {
   "name": "@mobilelive-inc/create-mfe",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "",
   "main": "cmd.js",
-  "bin": { 
+  "bin": {
     "create-mfe": "cmd.js"
   },
   "publishConfig": {
