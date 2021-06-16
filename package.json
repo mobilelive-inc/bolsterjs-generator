@@ -10,8 +10,8 @@
     "check": "npm run lint && npm run test"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mauricio Mercado <mauricio.mercado@mobilelive.ca>",
+  "license": "MIT",
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "snazzy": "^9.0.0",
@@ -23,10 +23,13 @@
     "commist": "^2.0.0",
     "enquirer": "^2.3.6",
     "generify": "^4.2.0",
-    "help-me": "^3.0.0",
     "minimist": "^1.2.5",
     "validate-npm-package-name": "^3.0.0"
   },
+  "precommit": [
+    "lint",
+    "test"
+  ],
   "standard": {
     "ignore": [
       "lib/create/templates/"
