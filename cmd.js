@@ -12,4 +12,5 @@ const result = cmd.register('create', create.cli)
 if (result) {
   log('error', 'No command called')
   log('error', 'mfe command requires argument create')
+  process.exit(1)
 }
