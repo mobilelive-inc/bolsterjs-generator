@@ -6,9 +6,6 @@
   "bin": {
     "create-mfe": "cmd.js"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "fix": "standard --fix",
     "lint": "standard | snazzy",
