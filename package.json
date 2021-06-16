@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "cmd.js",
+  "bin": { 
+    "create-mfe": "cmd.js"
+  },
   "scripts": {
     "fix": "standard --fix",
     "lint": "standard | snazzy",
-    "test": "tap -j1 -R  classic test/*.test.js",
+    "test": "tap -j1 -R classic test/*.test.js --no-check-coverage",
     "check": "npm run lint && npm run test"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
   "keywords": [],
   "author": "Mauricio Mercado <mauricio.mercado@mobilelive.ca>",
