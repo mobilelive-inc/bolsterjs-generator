@@ -1,11 +1,8 @@
 {
-  "name": "@mobilelive-inc/create-mfe",
+  "name": "@mobilelive-inc/mfxp-generator",
   "version": "1.0.1-beta.0",
   "description": "",
-  "main": "cmd.js",
-  "bin": {
-    "create-mfe": "cmd.js"
-  },
+  "main": "index.js",
   "scripts": {
     "fix": "standard --fix",
     "lint": "standard | snazzy",
@@ -27,7 +24,6 @@
   },
   "dependencies": {
     "ansi-colors": "^4.1.1",
-    "commist": "^2.0.0",
     "enquirer": "^2.3.6",
     "generify": "^4.2.0",
     "minimist": "^1.2.5",

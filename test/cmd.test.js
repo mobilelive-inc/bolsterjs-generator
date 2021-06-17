@@ -1,12 +1,21 @@
 'use strict'
 
 const { test } = require('tap')
-const { spawn } = require('child_process')
-const { once } = require('events')
-const path = require('path')
 
-test('with invalid command cli logs and exits erroneusly', async ({ ok }) => {
-  const cmd = spawn('node', [path.join(__dirname, '../cmd.js')])
-  await once(cmd, 'close')
-  ok(cmd.exitCode === 1)
+test('should return a function from create interface', ({ plan, ok }) => {
+  plan(1)
+  const create = require('../lib/create')
+  ok(typeof create.cli === 'function')
+})
+
+test('cli should err when initialized without log', ({ plan, throws }) => {
+  plan(1)
+  const cmd = require('..')
+  throws(() => cmd(), 'log must not be undefined')
+})
+
+test('cli should err when initialized without a log function', ({ plan, throws }) => {
+  plan(1)
+  const cmd = require('..')
+  throws(() => cmd({}), 'log must not be undefined')
 })
