@@ -1,1 +1,1 @@
-module.exports = require('./lib/create')
+module.exports = { create: require('./lib/create') }
