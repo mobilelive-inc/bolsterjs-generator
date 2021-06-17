@@ -1,4 +1,4 @@
-# mfe-init
+# mfxp-generator
 
 This is a proof of concept of a microfrontend application/container generation cli
 
