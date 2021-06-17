@@ -1,13 +1,9 @@
 # mfe-init
 
-This is a proof of concept of a microfrontend application/container generation.
+This is a proof of concept of a microfrontend application/container generation cli
 
 ## Usage
 
-For now git clone this project and execute cmd.js like so:
+This package simply exports an interface that takes a log function and arguments from the cli and parses it.
 
-```sh
-node cmd create appName
-```
-
-Then simply follow the instructions.
+The entry point is through [mfxp](https://github.com/mobilelive-inc/mfxp) package.
