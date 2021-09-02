@@ -1,6 +1,6 @@
-# bolsterJS-generator
+# BolsterJS-generator
 
-This is a proof of concept of a microfrontend application/container generation cli
+Microfrontend application/container generation cli
 
 ## Usage
 
